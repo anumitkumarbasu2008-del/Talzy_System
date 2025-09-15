@@ -9,9 +9,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <!-- link css file -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot/style.css">
 </head>
 
 <body>
+  <!-- Floating Chatbot Icon -->
+  <div class="chat-icon" id="chat-icon">
+    💬
+  </div>
+
+  <!-- Chatbot Window -->
+  <div class="chat-window" id="chat-window">
+    <div class="chat-header">
+      My Product Chatbot 
+      <span class="close-btn" id="close-btn">&times;</span>
+    </div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
   <!-- header section starts -->
 
   <header>
@@ -595,6 +613,7 @@ From casual to traditional wear, we deliver comfort, style, and elegance in ever
  <!-- footer section ends -->
 
   <!-- javascriot part -->
+   <script src="chatbot/script.js" defer></script>
   <script>
 
     let menu = document.querySelector('#menu-bars');
